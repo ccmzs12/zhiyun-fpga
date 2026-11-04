@@ -1,0 +1,29 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+    <FileList>
+        <File path="../rtl/top_day10_11.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/i2s_tx.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/voice_engine.v" type="file.verilog" enable="1"/>
+    <File path="../rtl/hcsr04.v" type="file.verilog" enable="1"/>
+    <File path="../rtl/dist_filter.v" type="file.verilog" enable="1"/>
+    <File path="../rtl/poly_key.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/i2c_master_multi.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/mpu6050_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/sensor_map.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/pitch_trend.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/ssd1306_spi.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/pitch_scope.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/fm_voice.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/keypad_scan.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/uart_tx.v" type="file.verilog" enable="1"/>
+    <File path="../rtl/audio_cap.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/mixer.v" type="file.verilog" enable="1"/>
+        <File path="../rtl/adsr.v" type="file.verilog" enable="1"/>
+        <File path="../constraints/day8_9.cst" type="file.cst" enable="1"/>
+        <File path="../constraints/timing.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

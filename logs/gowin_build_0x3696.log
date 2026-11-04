@@ -1,0 +1,96 @@
+*** GOWIN Tcl Command Line Console  *** 
+Open project C:/Users/Lenovo/Desktop/zhiyun/remap_l1_W17_20261103/prj/zhiyun.gprj finished
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\top_day10_11.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\i2s_tx.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\voice_engine.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\hcsr04.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\dist_filter.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\poly_key.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\i2c_master_multi.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\mpu6050_ctrl.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\sensor_map.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\pitch_trend.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\ssd1306_spi.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\pitch_scope.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\fm_voice.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\keypad_scan.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\uart_tx.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\audio_cap.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\mixer.v'
+Analyzing Verilog file 'C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\adsr.v'
+Compiling module 'top'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\top_day10_11.v":8)
+Compiling module 'keypad_scan'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\keypad_scan.v":13)
+Compiling module 'poly_key'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\poly_key.v":26)
+Compiling module 'pitch_scope(RESET_CYCLES=10000000,SPI_HALF_CYCLES=16)'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\pitch_scope.v":10)
+Compiling module 'pitch_trend'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\pitch_trend.v":10)
+Compiling module 'ssd1306_spi(HALF_CYCLES=16)'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\ssd1306_spi.v":9)
+Compiling module 'voice_engine'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\voice_engine.v":22)
+Extracting RAM for identifier 'ksmem'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\voice_engine.v":85)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\voice_engine.v":426)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\voice_engine.v":427)
+Compiling module 'hcsr04'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\hcsr04.v":15)
+Compiling module 'dist_filter'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\dist_filter.v":16)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\dist_filter.v":89)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\dist_filter.v":91)
+Compiling module 'mixer'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\mixer.v":17)
+Compiling module 'i2s_tx'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\i2s_tx.v":20)
+Compiling module 'i2c_master_multi'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\i2c_master_multi.v":4)
+Compiling module 'mpu6050_ctrl'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\mpu6050_ctrl.v":4)
+Compiling module 'sensor_map'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\sensor_map.v":4)
+Compiling module 'uart_tx'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\uart_tx.v":4)
+Compiling module 'audio_cap'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\audio_cap.v":11)
+Extracting RAM for identifier 'mem'("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\audio_cap.v":34)
+NOTE  (EX0101) : Current top module is "top"
+[5%] Running netlist conversion ...
+WARN  (CV0018) : Input Key_in[0] is unused("C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\rtl\top_day10_11.v":16)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\prj\impl\gwsynthesis\zhiyun.vg" completed
+[100%] Generate report file "C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\prj\impl\gwsynthesis\zhiyun_syn.rpt.html" completed
+GowinSynthesis finish
+WARN  (CM1011) : The input VCC is illegal,  VCC '0.9' is set to default.
+Reading netlist file: "C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\prj\impl\gwsynthesis\zhiyun.vg"
+Parsing netlist file "C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\prj\impl\gwsynthesis\zhiyun.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\constraints\day8_9.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'sys_clk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\prj\impl\pnr\zhiyun.power.html" completed
+Generate file "C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\prj\impl\pnr\zhiyun.pin.html" completed
+Generate file "C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\prj\impl\pnr\zhiyun.rpt.html" completed
+Generate file "C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\prj\impl\pnr\zhiyun.rpt.txt" completed
+Generate file "C:\Users\Lenovo\Desktop\zhiyun\remap_l1_W17_20261103\prj\impl\pnr\zhiyun.tr.html" completed
+Tue Nov  3 13:19:21 2026
+

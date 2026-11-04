@@ -1,0 +1,14 @@
+ModelSim verification for User Code 0x3696
+Date: 2026-11-03
+
+tb_pitch_trend
+  PASS: the low octave maps to the bottom band.
+  PASS: the centre octave maps to the middle band.
+  PASS: the high octave maps to the top band.
+  PASS: K1 to K8 moves upward.
+  PASS: positive bend moves upward and negative bend moves downward.
+  Errors: 0, Warnings: 0
+
+tb_pitch_scope
+  PASS: OLED initialization and full frame completed.
+  Errors: 0, Warnings: 0

@@ -1,0 +1,81 @@
+// Active project constraints for the Tang Mega 60K voice demo.
+//
+// Keypad harness:
+//   R1 -> U21, R2 -> P16, R3 -> R17, R4 -> R18
+//   L1 -> W17, L2 -> Y22, L3 -> P19, L4 -> AB22
+//
+// The onboard audio path uses the dedicated HP_* and PA_EN pins.
+
+IO_LOC "sys_clk" V22;
+IO_PORT "sys_clk" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+
+IO_LOC "sys_rst_n" AA13;
+IO_PORT "sys_rst_n" IO_TYPE=LVCMOS15 PULL_MODE=UP BANK_VCCIO=1.5;
+
+IO_LOC "Key_in[0]" AB13;
+IO_PORT "Key_in[0]" IO_TYPE=LVCMOS15 PULL_MODE=UP BANK_VCCIO=1.5;
+IO_LOC "Key_in[1]" Y12;
+IO_PORT "Key_in[1]" IO_TYPE=LVCMOS15 PULL_MODE=UP BANK_VCCIO=1.5;
+
+IO_LOC "HP_BCK" Y17;
+IO_PORT "HP_BCK" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "HP_WS" AB17;
+IO_PORT "HP_WS" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "HP_DIN" AA16;
+IO_PORT "HP_DIN" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "PA_EN" AB16;
+IO_PORT "PA_EN" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+// 4x4 keypad rows: R1..R4.
+IO_LOC "kp_row[0]" U21;
+IO_PORT "kp_row[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 OPEN_DRAIN=ON BANK_VCCIO=3.3;
+IO_LOC "kp_row[1]" P16;
+IO_PORT "kp_row[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 OPEN_DRAIN=ON BANK_VCCIO=3.3;
+IO_LOC "kp_row[2]" R17;
+IO_PORT "kp_row[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 OPEN_DRAIN=ON BANK_VCCIO=3.3;
+IO_LOC "kp_row[3]" R18;
+IO_PORT "kp_row[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 OPEN_DRAIN=ON BANK_VCCIO=3.3;
+
+// 4x4 keypad columns: L1..L4, active low with internal pull-up.
+IO_LOC "kp_col[0]" W17;
+IO_PORT "kp_col[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "kp_col[1]" Y22;
+IO_PORT "kp_col[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "kp_col[2]" P19;
+IO_PORT "kp_col[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "kp_col[3]" AB22;
+IO_PORT "kp_col[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+IO_LOC "txp" U15;
+IO_PORT "txp" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "event_led" T18;
+IO_PORT "event_led" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+
+// ================== Day 8/9 add: I2C master pins ==================
+// SCL = AA20 (right-side PMOD)
+// SDA = AA19 (right-side PMOD)
+// Both use internal pull-up; the MPU6050 module has its own 4.7k pull-ups.
+// AA21 is available after the optional ultrasonic function was removed.
+IO_LOC  "i2c_scl"      AA20;
+IO_PORT "i2c_scl"      IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 OPEN_DRAIN=OFF BANK_VCCIO=3.3;
+IO_LOC  "i2c_sda"      AA19;
+IO_PORT "i2c_sda"      IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 OPEN_DRAIN=OFF BANK_VCCIO=3.3;
+// ---- 128x64 SSD1306 OLED, 4-wire SPI, CS tied low ----
+// The module RESET pin uses a 10k pull-up to 3.3 V and 100 nF to GND.
+IO_LOC  "oled_scl"  C17;
+IO_PORT "oled_scl"  IO_TYPE=LVCMOS33 PULL_MODE=DOWN DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC  "oled_mosi" C18;
+IO_PORT "oled_mosi" IO_TYPE=LVCMOS33 PULL_MODE=DOWN DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC  "oled_dc"   C19;
+IO_PORT "oled_dc"   IO_TYPE=LVCMOS33 PULL_MODE=DOWN DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC  "oled_reset" B18;
+IO_PORT "oled_reset" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC  "oled_cs" A18;
+IO_PORT "oled_cs" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+// ---- ultrasonic distance sensor (HY-SRF05 / HC-SR04) ----
+IO_LOC  "us_trig"     N15;
+IO_PORT "us_trig"     IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC  "us_echo"     P17;
+IO_PORT "us_echo"     IO_TYPE=LVCMOS33 PULL_MODE=DOWN BANK_VCCIO=3.3;
